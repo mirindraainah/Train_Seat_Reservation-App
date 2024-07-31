@@ -1,0 +1,55 @@
+.cardAdminDestination {
+  background: white;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+.cardAdminDestination h3 {
+  padding-bottom: 15px;
+}
+.cardAdminDestination .bouton {
+  display: flex;
+  padding-left: 80px;
+  gap: 20px;
+}
+.cardAdminDestination .bouton button {
+  border: none;
+  padding: 8px 20px;
+  color: white;
+}
+.cardAdminDestination .bouton button:nth-child(1) {
+  background: #007bff;
+}
+.cardAdminDestination .bouton button:nth-child(2) {
+  background: #e36363;
+}
+.cardAdminDestination p {
+  line-height: 30px;
+}
+.cardAdminDestination .numero {
+  width: 20%;
+  position: relative;
+  padding: 20px 0;
+}
+.cardAdminDestination .numero p {
+  background: black;
+  border-radius: 50%;
+  width: 80%;
+  position: absolute;
+  top: 0;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+.AdminDestination button {
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  background: #a1c5ee;
+  color: white;
+}

@@ -1,0 +1,78 @@
+/* container */
+.auth {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 1px 4px 5px 2px #b4b2b2;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 6em;
+    width: 80%;
+    background-color: #fff;
+    padding: 0;
+    /* object-fit: contain; */
+}
+
+/* image de gauche */
+.auth-left-i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-left-i img {
+    width: 80%;
+}
+
+/* partie droite */
+.auth-right-i {
+    width: 100%;
+    padding: 1.3em 2.5em 0.5em 2.5em;
+    background-color: #e3e3e3; 
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.auth-right-i h3 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.auth-right-i form {
+   margin-top: 1em;
+   display: flex;
+   flex-direction: column;
+   gap: 0.8em;
+}
+
+.auth-right-i .input {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0;
+}
+
+.auth-right-i form input {
+    border-style: none;
+    height: 2.5vw;
+    margin-top: -0.3em;
+}
+
+.auth-right-i button {
+    padding: 0.8em 5em;
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-top: 0.3em;
+    border-style: none;
+    font-size: 0.9em;
+    background-color: #0062D1;
+    color: #fff;
+}
+
+.auth-right-i p {
+    text-align: center;
+    margin-top: 0.4em;
+}
+
+.auth-right-i span {
+    color: #0062D1;
+}

@@ -1,0 +1,109 @@
+body {
+    /* background-color: #fff; */
+    overflow-x: hidden;
+}
+
+/* retour */
+
+.container .retour {
+    display: flex;
+    /* margin-left: 11.5em; */
+    margin-right: 0;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.container .retour img {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+/* card */
+.container .card {
+    padding: 3em 1em;
+    width: 70%;
+    border-style: none;
+}
+
+/* card extérieur */
+
+.principal-card {
+    background-color: #ebebeb;
+    border-radius: 0%;
+    border-top-right-radius: 30px;
+}
+
+/* card intérieur */
+.container-form {
+    background-color: #f7f7f7;
+    padding: 2em;
+}
+
+.container-form form input {
+    height: 2.5vw;
+}
+
+.container-form form input {
+    background-color: transparent;
+    border: 1px solid #e3e3e3;
+}
+
+.container-form .input {
+    padding: 0;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 1em;
+}
+
+.container-form .horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-form .horizontal input {
+    width: 24vw;
+}
+
+.card button:not(.trainbtn button) {
+    padding: 0.8em 7em;
+    border-radius: 50px;
+    display: flex;
+    float: right;
+    margin-top: 2em;
+    border-style: none;
+    font-size: 0.9em;
+    background-color: #0062D1;
+    color: #fff;
+}
+.trainbtn {
+  float: right;
+ 
+  margin-top: 4em;
+
+  }
+.trainbtn button {
+    padding: 0.8em 7em;
+    /* margin-top: 1em; */
+    border-style: none;
+    font-size: 0.9em;
+    background-color: #0062d1;
+    color: #fff;
+  }
+  .trainbtn .bouton {
+    display: flex;
+    padding-left: 8em;
+    gap: 25px;
+  }
+  .trainbtn .bouton button {
+    border: none;
+    padding: 8px 30px;
+    color: white;
+  }
+  .trainbtn .bouton button:nth-child(1) {
+    background: #007bff;
+  }
+  .trainbtn .bouton button:nth-child(2) {
+    background: #e36363;
+  }

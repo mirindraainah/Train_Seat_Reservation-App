@@ -1,0 +1,304 @@
+.defaultLayout .children {
+  padding: 0 50px;
+}
+
+.defaultLayout div.header {
+  display: flex;
+  padding: 10px 100px;
+  justify-content: space-between;
+  width: 100vw;
+  backdrop-filter: blur(20px);
+  backdrop-filter: opacity(20%);
+  z-index: -1;
+  animation: anime3 0.5s linear;
+}
+@keyframes anime3 {
+  0% {
+    opacity: 0;
+  }
+}
+.defaultLayout div.stickyNavBar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  padding: 10px 100px;
+  width: 100%;
+  background-color: #0062d163;
+  backdrop-filter: blur(2px);
+  z-index: 10;
+  transition: all 700ms ease-in-out;
+  border-radius: 0 0 20px 20px;
+}
+
+.defaultLayout div.hidden {
+  top: -100px; /* Déplacer le navbar hors de la vue */
+}
+.defaultLayout .stickyNavBar ul {
+  color: rgb(132, 130, 130);
+  transition: all 700ms;
+  display: flex;
+  list-style-type: none;
+  column-gap: 100px;
+}
+.defaultLayout .stickyNavBar ul li {
+  color: white;
+  transition: all 700ms;
+  cursor: pointer;
+}
+.defaultLayout .header ul {
+  display: flex;
+  list-style-type: none;
+  column-gap: 100px;
+  margin-top: 5px;
+  position: relative;
+}
+.defaultLayout .header svg {
+  cursor: pointer;
+}
+
+.defaultLayout .header ul li {
+  color: #c3c3c3;
+  transition: all 700ms;
+  cursor: pointer;
+}
+
+/* menu hover */
+.defaultLayout .header ul a.nav-active::after {
+  content: "";
+  transition: width 700ms ease-in-out;
+  width: 0;
+}
+.defaultLayout .header ul a.nav-active:hover::after {
+  color: #0062d1;
+  content: "";
+  background-color: #0062d1;
+  padding: 1px;
+  width: 40px;
+  position: absolute;
+  transition: 700ms;
+  cursor: pointer;
+}
+.defaultLayout .header ul a.nav-active:hover li::first-letter {
+  color: #0062d1;
+}
+.defaultLayout .header ul a.nav-active1 li::first-letter,
+.defaultLayout .header ul a.nav-active2 li::first-letter {
+  color: #0062d1;
+}
+
+.defaultLayout .header ul a.nav-active1::after,
+.defaultLayout .header ul a.nav-active2::after {
+  color: #0062d1;
+  content: "";
+  background-color: #0062d1;
+  padding: 1px;
+  width: 40px;
+  position: absolute;
+  transition: 700ms;
+  cursor: pointer;
+}
+
+/* menu hover sticky */
+.defaultLayout .stickyNavBar ul a.nav-active::after {
+  content: "";
+  transition: width 700ms ease-in-out;
+  width: 0;
+}
+.defaultLayout .stickyNavBar ul a.nav-active:hover::after {
+  color: #0062d1;
+  content: "";
+  background-color: #0062d1;
+  padding: 1px;
+  width: 40px;
+  position: absolute;
+  transition: 700ms;
+  cursor: pointer;
+}
+.defaultLayout .stickyNavBar ul a.nav-active:hover li::first-letter {
+  color: #0062d1;
+}
+.defaultLayout .stickyNavBar ul a.nav-active1 li::first-letter,
+.defaultLayout .stickyNavBar ul a.nav-active2 li::first-letter {
+  color: #0062d1;
+}
+
+.defaultLayout .stickyNavBar ul a.nav-active1::after,
+.defaultLayout .stickyNavBar ul a.nav-active2::after {
+  color: #0062d1;
+  content: "";
+  background-color: #0062d1;
+  padding: 1px;
+  width: 40px;
+  position: absolute;
+  transition: 700ms;
+  cursor: pointer;
+}
+
+.defaultLayout .stickyNavBar ul a {
+  text-decoration: none;
+}
+.defaultLayout .header ul a {
+  text-decoration: none;
+}
+.defaultLayout .search {
+  display: flex;
+  gap: 20px;
+  padding: 100px 100px 50px 100px;
+ 
+}
+.defaultLayout .search input,
+.defaultLayout .search select {
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: 2px solid #c3c3c3;
+  transition: border 0.3s ease-in;
+}
+.defaultLayout .search input:hover,
+.defaultLayout .search select:hover {
+  cursor: pointer;
+}
+.defaultLayout .search input:focus,
+.defaultLayout .search select:focus {
+  border: 2px solid #0062d1;
+}
+button.dropbtn {
+  transition: all 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.414);
+  padding: 10px 20px;
+  border-radius: 50%;
+  font-size: 1em;
+  background: #0062d130;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0062d1;
+  margin-top: -6px;
+}
+button.dropbtn:hover {
+  background: #0062d163;
+}
+.dropdown {
+  transition: all 0.3s;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* top: 10px; */
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 15vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  background-position: 1px 1px;
+  background-repeat: no-repeat;
+  display: block;
+}
+.dropdown-content a:first-child {
+  padding: 12px 16px;
+  background-image: url("/public/assets/icons8_male_user_16.png");
+  background-position: 16px 18px;
+  background-repeat: no-repeat;
+  padding: 15px 15px 15px 55px;
+}
+.dropdown-content a:last-child {
+  background-position: 16px 18px;
+  background-image: url("/public/assets/icons8_logout_rounded_up_16.png");
+  background-repeat: no-repeat;
+  padding: 15px 15px 15px 55px;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  transition: display 0.5s;
+  display: block;
+  z-index: 0;
+}
+
+/* ---------------- Reservation---------------- */
+.reservation {
+  background: #ebebeb;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(35vw,1fr));
+  gap: 20px;
+  border-top-right-radius: 20px;
+  
+}
+
+.cardReservation {
+  height: fit-content;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  background: white;
+}
+@keyframes anime2 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.cardReservation h2,
+.AdminReservation h3 {
+  color: #0062d1;
+  padding-bottom: 10px;
+}
+
+.cardReservation button {
+  border: none;
+  padding: 5px 40px;
+  background: #e36363;
+  color: white;
+  font-size: 1.1rem;
+  float: right;
+}
+.AdminReservation .reservation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.AdminReservation .cardAdminReservation {
+  padding: 1em;
+  background: white;
+  display: flex;
+  gap: 20px;
+  border: 2px solid #0062d131;
+  position: relative;
+  animation: anime2 0.8s ease;
+  z-index: 10;
+}
+.AdminReservation .mainBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin-left: 5em;
+}
+.AdminReservation .mainBottom::before {
+  content: "";
+  background: #0062d1;
+  height: 15vh;
+  padding: 1px;
+  left: -4em;
+  position: absolute;
+}
+
+
